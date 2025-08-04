@@ -25,7 +25,7 @@ Click the link and download the `.zip` file with the installer inside.
 
 1. Open your terminal
 2. RENAME IT TO pie dont ask
-3. Unzip the file and enter the folder  
+3. Unzip the file and enter the folder (in Terminal with cd pie)
 4. Run:
 
 ```bash
