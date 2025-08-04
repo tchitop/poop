@@ -23,9 +23,10 @@ Click the link and download the `.zip` file with the installer inside.
 
 ## ⚙️ Installation (macOS/Linux)
 
-1. Open your terminal  
-2. Unzip the file and enter the folder  
-3. Run:
+1. Open your terminal
+2. RENAME IT TO pie dont ask
+3. Unzip the file and enter the folder  
+4. Run:
 
 ```bash
 chmod +x install.sh
