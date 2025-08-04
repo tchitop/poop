@@ -1,82 +1,115 @@
-# 💩 poop – A Better `pip` (just trust me bro)
+# 💩 poop – The Better `pip` (yes, seriously)
 
-> Yep, it’s literally called `poop`.  
-> It’s a wrapper/alias for `pip`, but with extra fun and mystery ✨  
-> Built with ❤️ (and ChatGPT) – don’t ask why.
-
----
+> A stupidly useful `pip` alias with chaotic vibes  
+> Built by someone who should’ve been sleeping instead.  
+> 💬 Get your unlock token via Discord DM.
 
 ## 🔓 Unlock Access
 
-To unlock `poop`, message me on **Discord**.  
-I’ll give you your personal unlock token – you enter it during setup.
+To unlock and use poop, message me on **Discord** and I’ll send you your personal token.
 
-**Unlock Token Format:**  
+Example unlock token:
+```
+# poop
+```
 
-
-
-No token, no poop. 🚫💩
-
----
+You’ll be asked for it during installation. No token = no poop 🚫💩
 
 ## ⬇️ Download
 
-1. Visit the download portal:  
-   👉 [https://2fd903f6-53d1-4f11-adbe-f96709b43aa1-00-2k6f0am9tagdr.janeway.replit.dev/](https://2fd903f6-53d1-4f11-adbe-f96709b43aa1-00-2k6f0am9tagdr.janeway.replit.dev/)
-2. Click on **Download Installer**
-3. You’ll get a `.zip` file containing the magic
+👉 https://2fd903f6-53d1-4f11-adbe-f96709b43aa1-00-2k6f0am9tagdr.janeway.replit.dev/
 
----
+Click the link and download the `.zip` file with the installer inside.
 
 ## ⚙️ Installation (macOS/Linux)
 
-Open your terminal and follow these steps:
+1. Open your terminal  
+2. Unzip the file and enter the folder  
+3. Run:
 
 ```bash
-# Step 1: Unzip the archive
-unzip poop_installer.zip
-cd poop_installer/
-
-# Step 2: Make the script executable
 chmod +x install.sh
-
-# Step 3: Run the installer
 ./install.sh
+```
 
+You'll be asked to enter your unlock token. If it's valid, poop will be installed.
 
-❌ Uninstalling (in case you can’t handle the poop)
-bash
-Kopieren
-Bearbeiten
+## ❌ Uninstallation
+
+If you ever want to remove poop from your system:
+
+```bash
 chmod +x uninstall.sh
 ./uninstall.sh
-It’ll clean up everything – like a good flush 🚽
+```
 
-💡 How to Use poop
-It’s just like pip. In fact, it is pip – just cooler.
+It will clean up your shell aliases. The poop is flushed 🧻
 
-Example:
-bash
-Kopieren
-Bearbeiten
+## 🚀 How to Use
+
+It's exactly like `pip`. Just… funnier.
+
+### Example:
+```bash
+# Normal pip:
+pip install requests
+
+# With extra 💩:
 poop install requests
-Yup. That’s it. All regular pip commands work. You just type poop instead.
+```
 
-🧪 Features
-Identical syntax to pip
+100% compatible with pip.  
+Also prints a random funny message sometimes. Because why not?
 
-Random fun messages while installing
+## 📜 install.sh (included in ZIP)
 
-Secret surprises (some say the poop speaks 👀)
+```bash
+#!/bin/bash
 
-Makes your terminal less boring
+echo "💩 Welcome to poop installer!"
+read -p "Enter unlock token: " token
 
-🤝 Need Help?
-Just send me a message on Discord
-💬 I’ll send you the unlock token and guide you if needed.
+if [[ "$token" != "# poop" ]]; then
+    echo "❌ Invalid token. No poop for you."
+    exit 1
+fi
 
-👑 Credits
-Made by: You know who.
-Idea by: Me and my sleep-deprived brain
-Powered by: Coffee, chaos, and ChatGPT 🤖
+echo "✅ Token accepted. Installing poop..."
 
+echo "alias poop='pip'" >> ~/.bashrc 2>/dev/null
+echo "alias poop='pip'" >> ~/.zshrc 2>/dev/null
+
+echo "✅ poop installed successfully!"
+echo "👉 Restart your terminal or run: source ~/.bashrc or source ~/.zshrc"
+```
+
+## 📜 uninstall.sh (also included)
+
+```bash
+#!/bin/bash
+
+echo "🧼 Removing poop from your system..."
+
+sed -i '' '/alias poop=.*/d' ~/.bashrc 2>/dev/null
+sed -i '' '/alias poop=.*/d' ~/.zshrc 2>/dev/null
+
+echo "✅ poop has been flushed."
+```
+
+## 🤝 Need Help?
+
+Message me on **Discord**. I’ll:
+- Send your unlock token
+- Help you install poop
+- Probably make bad jokes
+
+## 👑 Credits
+
+Made by: **unix**  
+Assisted by: **ChatGPT**  
+Powered by: ☕ + 💀 + 😈 + 😴
+
+> “It may be called poop, but it works beautifully.” – No one ever  
+> “The only pip I trust.” – A guy on the internet
+
+> 💩 Happy pooping!
